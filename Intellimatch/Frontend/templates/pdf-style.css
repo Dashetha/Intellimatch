@@ -1,0 +1,188 @@
+/* Modern Resume Template Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+.resume {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+.resume-header {
+    text-align: center;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #4361ee;
+    padding-bottom: 20px;
+}
+
+.resume-header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+    color: #4361ee;
+}
+
+.resume-header h2 {
+    font-size: 1.5rem;
+    margin: 5px 0 15px;
+    color: #666;
+    font-weight: normal;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.contact-info span {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.resume-section {
+    margin-bottom: 25px;
+}
+
+.resume-section h3 {
+    color: #4361ee;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+.experience-item {
+    margin-bottom: 20px;
+}
+
+.experience-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.experience-header h4 {
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+.company {
+    font-weight: bold;
+}
+
+.date {
+    color: #666;
+    font-style: italic;
+}
+
+.experience-bullets {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.experience-bullets li {
+    margin-bottom: 5px;
+}
+
+.education-item {
+    margin-bottom: 15px;
+}
+
+.education-item h4 {
+    margin: 0 0 5px 0;
+}
+
+.institution {
+    font-weight: bold;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skill-tag {
+    background-color: #4361ee;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 0.9rem;
+}
+
+/* Classic Template Styles */
+.classic-template .resume-header {
+    text-align: left;
+    border-bottom: none;
+}
+
+.classic-template .resume-header h1 {
+    color: #333;
+    font-size: 2rem;
+}
+
+.classic-template .contact-info {
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.classic-template .resume-section h3 {
+    background-color: #f5f5f5;
+    padding: 5px 10px;
+    border-left: 3px solid #4361ee;
+}
+
+/* Executive Template Styles */
+.executive-template {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.executive-template .resume-header {
+    border-bottom: 1px solid #ddd;
+}
+
+.executive-template .resume-header h1 {
+    color: #222;
+    letter-spacing: 1px;
+}
+
+.executive-template .resume-section h3 {
+    color: #222;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Creative Template Styles */
+.creative-template {
+    background-color: #f9f9f9;
+    padding: 30px;
+}
+
+.creative-template .resume-header {
+    background-color: #4361ee;
+    color: white;
+    padding: 20px;
+    margin: -30px -30px 30px;
+}
+
+.creative-template .resume-header h1,
+.creative-template .resume-header h2,
+.creative-template .resume-header .contact-info span {
+    color: white;
+}
+
+.creative-template .resume-section {
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.creative-template .skill-tag {
+    background-color: #4cc9f0;
+}

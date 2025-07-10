@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Preview | IntelliMatch</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/pdf-preview.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="../assets/logo.png" alt="IntelliMatch Logo">
+            <h1>IntelliMatch</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Dashboard</a></li>
+                <li><a href="../resume-editor.html">Resume Editor</a></li>
+                <li><a href="../ats.html">ATS Simulator</a></li>
+                <li><a href="../cover-letter.html">Cover Letter</a></li>
+                <li><a href="#" id="auth-btn">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="pdf-preview">
+        <div class="preview-controls">
+            <h2>Resume Preview</h2>
+            <div class="template-selector">
+                <label for="template-select">Select Template:</label>
+                <select id="template-select">
+                    <option value="modern">Modern</option>
+                    <option value="classic">Classic</option>
+                    <option value="executive">Executive</option>
+                    <option value="creative">Creative</option>
+                </select>
+            </div>
+            <div class="actions">
+                <button id="download-pdf">Download PDF</button>
+                <button id="back-to-edit">Back to Editor</button>
+            </div>
+        </div>
+        
+        <div class="preview-container">
+            <iframe id="pdf-iframe" src="../templates/modern-template.html"></iframe>
+        </div>
+    </main>
+
+    <script src="../js/pdf.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html>

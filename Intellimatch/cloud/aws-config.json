@@ -1,0 +1,25 @@
+{
+  "AWS": {
+    "REGION": "us-east-1",
+    "S3_BUCKET": "intellimatch-app",
+    "EC2_INSTANCE_ID": "i-0123456789abcdef0",
+    "SSH_KEY": "intellimatch-key.pem",
+    "EC2_HOST": "ec2-12-34-56-78.compute-1.amazonaws.com",
+    "DEPLOYMENT_GROUP": "IntelliMatch-App",
+    "ECS_CLUSTER": "intellimatch-cluster",
+    "ECS_SERVICE": "intellimatch-service",
+    "CLOUDFRONT_DISTRIBUTION": "EABCDEFGHIJKLM"
+  },
+  "S3Buckets": {
+    "resumes": "intellimatch-resumes",
+    "assets": "intellimatch-assets"
+  },
+  "LambdaFunctions": {
+    "pdfGenerator": "intellimatch-pdf-generator",
+    "aiProcessing": "intellimatch-ai-processor"
+  },
+  "APIGateway": {
+    "restApi": "intellimatch-api",
+    "websocketApi": "intellimatch-ws"
+  }
+}

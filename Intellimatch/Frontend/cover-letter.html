@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cover Letter Generator | IntelliMatch</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/cover-letter.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="../assets/logo.png" alt="IntelliMatch Logo">
+            <h1>IntelliMatch</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Dashboard</a></li>
+                <li><a href="../resume-editor.html">Resume Editor</a></li>
+                <li><a href="../ats.html">ATS Simulator</a></li>
+                <li><a href="#" class="active">Cover Letter</a></li>
+                <li><a href="#" id="auth-btn">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="cover-letter-container">
+        <h2>AI Cover Letter Generator</h2>
+        <p>Create a personalized cover letter tailored to your resume and the job</p>
+        
+        <div class="generator-form">
+            <div class="input-section">
+                <div class="form-group">
+                    <label for="resume-select">Select Resume:</label>
+                    <select id="resume-select">
+                        <option value="">-- Select a Resume --</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="job-title">Job Title:</label>
+                    <input type="text" id="job-title" placeholder="e.g., Senior Software Engineer">
+                </div>
+                
+                <div class="form-group">
+                    <label for="company-name">Company Name:</label>
+                    <input type="text" id="company-name" placeholder="e.g., Tech Innovations Inc.">
+                </div>
+                
+                <div class="form-group">
+                    <label for="job-description">Job Description:</label>
+                    <textarea id="job-description" placeholder="Paste the job description here..."></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="tone-select">Tone:</label>
+                    <select id="tone-select">
+                        <option value="professional">Professional</option>
+                        <option value="enthusiastic">Enthusiastic</option>
+                        <option value="conservative">Conservative</option>
+                        <option value="creative">Creative</option>
+                    </select>
+                </div>
+                
+                <button id="generate-letter">Generate Cover Letter</button>
+            </div>
+            
+            <div class="result-section" id="result-section" style="display: none;">
+                <div class="letter-actions">
+                    <button id="download-letter">Download as PDF</button>
+                    <button id="regenerate-letter">Regenerate</button>
+                    <button id="copy-letter">Copy to Clipboard</button>
+                </div>
+                
+                <div class="letter-preview" id="letter-preview">
+                    <!-- Generated letter will appear here -->
+                </div>
+                
+                <div class="letter-actions">
+                    <button id="download-letter-2">Download as PDF</button>
+                    <button id="regenerate-letter-2">Regenerate</button>
+                    <button id="copy-letter-2">Copy to Clipboard</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="../js/coverletter.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html>

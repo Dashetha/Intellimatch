@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IntelliMatch - AI-Powered Job Application Assistant</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="assets/logo.png" alt="IntelliMatch Logo">
+            <h1>IntelliMatch</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#" class="active">Dashboard</a></li>
+                <li><a href="resume-editor.html">Resume Editor</a></li>
+                <li><a href="ats.html">ATS Simulator</a></li>
+                <li><a href="cover-letter.html">Cover Letter</a></li>
+                <li><a href="#" id="auth-btn">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>Apply Smarter, Not Harder</h2>
+            <p>AI-powered tools to optimize your job applications and beat the ATS</p>
+            <button id="upload-resume-btn">Upload Your Resume</button>
+        </section>
+
+        <section class="features">
+            <div class="feature-card">
+                <i class="fas fa-magic"></i>
+                <h3>AI Resume Rewriter</h3>
+                <p>Enhance your bullet points with powerful action verbs and measurable results</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-robot"></i>
+                <h3>ATS Simulator</h3>
+                <p>See how your resume scores before you apply</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-file-alt"></i>
+                <h3>Cover Letter Generator</h3>
+                <p>Create tailored cover letters in seconds</p>
+            </div>
+        </section>
+
+        <section class="recent-resumes">
+            <h3>Your Recent Resumes</h3>
+            <div class="resume-list" id="resume-list">
+                <!-- Dynamically populated by JavaScript -->
+                <div class="resume-item">
+                    <h4>Software Engineer Resume</h4>
+                    <p>Last edited: 2023-05-15</p>
+                    <div class="resume-score">
+                        <span class="score high-score">85%</span>
+                        <a href="resume-editor.html?id=1" class="edit-link">Edit</a>
+                    </div>
+                </div>
+                <div class="resume-item">
+                    <h4>Product Manager Resume</h4>
+                    <p>Last edited: 2023-04-28</p>
+                    <div class="resume-score">
+                        <span class="score medium-score">72%</span>
+                        <a href="resume-editor.html?id=2" class="edit-link">Edit</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="sample-dark-section-container">
+          <section class="dark-section">
+            <div class="dark-card">
+              <h2>Premium Resume Builder</h2>
+              <p>Create stunning, ATS-friendly resumes with our modern, AI-powered platform. Stand out with style and substance.</p>
+              <button class="dark-btn">Get Started</button>
+            </div>
+          </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 IntelliMatch. All rights reserved.</p>
+    </footer>
+
+    <div class="modal" id="upload-modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>Upload Resume</h3>
+            <form id="resume-upload-form">
+                <input type="file" id="resume-file" accept=".pdf,.docx" required>
+                <input type="text" id="resume-name" placeholder="Resume name (e.g., 'Software Engineer v2')" required>
+                <button type="submit">Upload</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/resume.js"></script>
+</body>
+</html>

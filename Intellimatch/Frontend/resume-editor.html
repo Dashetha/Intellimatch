@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Editor | IntelliMatch</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/resume-editor.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="../assets/logo.png" alt="IntelliMatch Logo">
+            <h1>IntelliMatch</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Dashboard</a></li>
+                <li><a href="#" class="active">Resume Editor</a></li>
+                <li><a href="../ats.html">ATS Simulator</a></li>
+                <li><a href="../cover-letter.html">Cover Letter</a></li>
+                <li><a href="#" id="auth-btn">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="resume-editor">
+        <div class="editor-header">
+            <h2>Resume Editor</h2>
+            <div class="editor-actions">
+                <input type="text" id="resume-name" placeholder="Resume Name">
+                <button id="save-resume">Save Resume</button>
+                <button id="export-pdf">Export as PDF</button>
+            </div>
+        </div>
+        
+        <div class="editor-container">
+            <div class="sections-sidebar">
+                <h3>Sections</h3>
+                <ul>
+                    <li class="active" data-section="contact">Contact Info</li>
+                    <li data-section="summary">Professional Summary</li>
+                    <li data-section="experience">Work Experience</li>
+                    <li data-section="education">Education</li>
+                    <li data-section="skills">Skills</li>
+                    <li data-section="projects">Projects</li>
+                    <li data-section="certifications">Certifications</li>
+                </ul>
+                
+                <button id="add-section">+ Add Section</button>
+            </div>
+            
+            <div class="editor-content">
+                <div class="section-content" id="contact-section">
+                    <h3>Contact Information</h3>
+                    <div class="form-group">
+                        <label>Full Name</label>
+                        <input type="text" id="full-name">
+                    </div>
+                    <div class="form-group">
+                        <label>Professional Title</label>
+                        <input type="text" id="professional-title">
+                    </div>
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" id="email">
+                    </div>
+                    <div class="form-group">
+                        <label>Phone</label>
+                        <input type="tel" id="phone">
+                    </div>
+                    <div class="form-group">
+                        <label>LinkedIn</label>
+                        <input type="url" id="linkedin">
+                    </div>
+                    <div class="form-group">
+                        <label>Portfolio/GitHub</label>
+                        <input type="url" id="portfolio">
+                    </div>
+                </div>
+                
+                <div class="section-content" id="summary-section" style="display: none;">
+                    <h3>Professional Summary</h3>
+                    <textarea id="summary-text" placeholder="Write a brief summary of your professional background and key skills..."></textarea>
+                    <button class="enhance-btn">Enhance with AI</button>
+                </div>
+                
+                <div class="section-content" id="experience-section" style="display: none;">
+                    <h3>Work Experience</h3>
+                    <div id="experience-container">
+                        <!-- Experience items will be added here -->
+                    </div>
+                    <button id="add-experience">+ Add Experience</button>
+                </div>
+                
+                <!-- Other sections would follow the same pattern -->
+            </div>
+        </div>
+    </main>
+
+    <script src="../js/resume.js"></script>
+    <script src="../js/rewriter.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html>

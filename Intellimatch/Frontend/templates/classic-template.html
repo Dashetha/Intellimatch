@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classic Resume Template | IntelliMatch</title>
+    <link rel="stylesheet" href="pdf-style.css">
+    <style>
+        /* Classic Template Specific Styles */
+        .classic-template {
+            font-family: 'Times New Roman', Times, serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px;
+            color: #333;
+            line-height: 1.5;
+        }
+
+        .classic-template .resume-header {
+            text-align: left;
+            border-bottom: 2px solid #333;
+            padding-bottom: 15px;
+            margin-bottom: 20px;
+        }
+
+        .classic-template .resume-header h1 {
+            font-size: 28px;
+            margin: 0;
+            color: #333;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .classic-template .resume-header h2 {
+            font-size: 18px;
+            margin: 5px 0 0 0;
+            color: #555;
+            font-weight: normal;
+            font-style: italic;
+        }
+
+        .classic-template .contact-info {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+            font-size: 14px;
+        }
+
+        .classic-template .resume-section {
+            margin-bottom: 25px;
+        }
+
+        .classic-template .section-title {
+            font-size: 20px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+            color: #333;
+            text-transform: uppercase;
+        }
+
+        .classic-template .experience-item,
+        .classic-template .education-item {
+            margin-bottom: 20px;
+        }
+
+        .classic-template .experience-header,
+        .classic-template .education-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 5px;
+        }
+
+        .classic-template .experience-header h4,
+        .classic-template .education-header h4 {
+            margin: 0;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .classic-template .company,
+        .classic-template .institution {
+            font-weight: bold;
+        }
+
+        .classic-template .date {
+            color: #555;
+        }
+
+        .classic-template .experience-bullets {
+            margin: 0 0 0 20px;
+            padding: 0;
+        }
+
+        .classic-template .experience-bullets li {
+            margin-bottom: 5px;
+            list-style-type: square;
+        }
+
+        .classic-template .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .classic-template .skill-tag {
+            background-color: #f0f0f0;
+            color: #333;
+            padding: 3px 10px;
+            border-radius: 3px;
+            font-size: 14px;
+            border: 1px solid #ddd;
+        }
+
+        .classic-template .summary-content {
+            text-align: justify;
+        }
+
+        /* PDF specific styles */
+        @media print {
+            body {
+                padding: 0;
+                margin: 0;
+                background: white;
+            }
+            .classic-template {
+                padding: 0;
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="resume classic-template">
+        <header class="resume-header">
+            <h1 id="resume-name">John Doe</h1>
+            <h2 id="resume-title">Software Engineer</h2>
+            <div class="contact-info">
+                <span id="resume-email">john.doe@example.com</span>
+                <span id="resume-phone">(123) 456-7890</span>
+                <span id="resume-linkedin">linkedin.com/in/johndoe</span>
+                <span id="resume-portfolio">github.com/johndoe</span>
+            </div>
+        </header>
+        
+        <section class="resume-section">
+            <h3 class="section-title">Professional Summary</h3>
+            <div class="section-content summary-content" id="summary-content">
+                Experienced software engineer with 5+ years of experience in full-stack development, specializing in JavaScript frameworks and cloud technologies. Proven track record of delivering scalable solutions and leading development teams. Passionate about creating efficient, maintainable code and mentoring junior developers.
+            </div>
+        </section>
+        
+        <section class="resume-section">
+            <h3 class="section-title">Work Experience</h3>
+            <div class="section-content" id="experience-content">
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <h4>Senior Software Engineer</h4>
+                        <span class="date">Jan 2020 - Present</span>
+                    </div>
+                    <div class="company">Tech Solutions Inc., San Francisco, CA</div>
+                    <ul class="experience-bullets">
+                        <li>Led a team of 5 developers to build a new SaaS platform using React and Node.js</li>
+                        <li>Optimized application performance, reducing load times by 40% through code improvements and caching strategies</li>
+                        <li>Implemented CI/CD pipeline reducing deployment time from 30 minutes to under 5 minutes</li>
+                    </ul>
+                </div>
+                
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <h4>Software Developer</h4>
+                        <span class="date">Jun 2018 - Dec 2019</span>
+                    </div>
+                    <div class="company">Digital Innovations LLC, New York, NY</div>
+                    <ul class="experience-bullets">
+                        <li>Developed RESTful APIs using Express.js that served over 10,000 daily requests</li>
+                        <li>Created responsive user interfaces with React that improved user engagement by 25%</li>
+                        <li>Collaborated with UX designers to implement accessibility features meeting WCAG 2.1 standards</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <section class="resume-section">
+            <h3 class="section-title">Education</h3>
+            <div class="section-content" id="education-content">
+                <div class="education-item">
+                    <div class="education-header">
+                        <h4>Bachelor of Science in Computer Science</h4>
+                        <span class="date">Graduated May 2018</span>
+                    </div>
+                    <div class="institution">State University, Boston, MA</div>
+                    <div>GPA: 3.8/4.0</div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="resume-section">
+            <h3 class="section-title">Technical Skills</h3>
+            <div class="section-content" id="skills-content">
+                <div class="skills-container">
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">React</span>
+                    <span class="skill-tag">Node.js</span>
+                    <span class="skill-tag">Express</span>
+                    <span class="skill-tag">MongoDB</span>
+                    <span class="skill-tag">AWS</span>
+                    <span class="skill-tag">Docker</span>
+                    <span class="skill-tag">Git</span>
+                    <span class="skill-tag">CI/CD</span>
+                    <span class="skill-tag">Agile Methodologies</span>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        // This script will be populated with actual resume data when rendered
+        document.addEventListener('DOMContentLoaded', function() {
+            // Get resume data from URL parameters or parent window
+            const urlParams = new URLSearchParams(window.location.search);
+            const resumeData = urlParams.get('data') 
+                ? JSON.parse(decodeURIComponent(urlParams.get('data'))) 
+                : window.parent.resumeData;
+            
+            if (resumeData) {
+                populateResume(resumeData);
+            }
+            
+            // If this is being printed, close after a delay
+            if (window.location.search.includes('print=true')) {
+                setTimeout(() => window.close(), 1000);
+            }
+        });
+
+        function populateResume(data) {
+            // Basic Info
+            if (data.name) document.getElementById('resume-name').textContent = data.name;
+            if (data.title) document.getElementById('resume-title').textContent = data.title;
+            if (data.contact) {
+                const contactParts = data.contact.split('|');
+                if (contactParts[0]) document.getElementById('resume-email').textContent = contactParts[0].trim();
+                if (contactParts[1]) document.getElementById('resume-phone').textContent = contactParts[1].trim();
+            }
+            if (data.linkedin) document.getElementById('resume-linkedin').textContent = data.linkedin;
+            if (data.portfolio) document.getElementById('resume-portfolio').textContent = data.portfolio;
+            
+            // Summary
+            if (data.summary) document.getElementById('summary-content').textContent = data.summary;
+            
+            // Experience
+            const experienceContainer = document.getElementById('experience-content');
+            if (data.experience && data.experience.length > 0) {
+                experienceContainer.innerHTML = '';
+                data.experience.forEach(exp => {
+                    const expItem = document.createElement('div');
+                    expItem.className = 'experience-item';
+                    expItem.innerHTML = `
+                        <div class="experience-header">
+                            <h4>${exp.role || 'Position'}</h4>
+                            <span class="date">${exp.period || 'Dates'}</span>
+                        </div>
+                        <div class="company">${exp.company || 'Company'}</div>
+                        <ul class="experience-bullets">
+                            ${exp.bullets ? exp.bullets.map(bullet => `<li>${bullet}</li>`).join('') : ''}
+                        </ul>
+                    `;
+                    experienceContainer.appendChild(expItem);
+                });
+            }
+            
+            // Education
+            const educationContainer = document.getElementById('education-content');
+            if (data.education && data.education.length > 0) {
+                educationContainer.innerHTML = '';
+                data.education.forEach(edu => {
+                    const eduItem = document.createElement('div');
+                    eduItem.className = 'education-item';
+                    eduItem.innerHTML = `
+                        <div class="education-header">
+                            <h4>${edu.degree || 'Degree'}</h4>
+                            <span class="date">${edu.year || 'Year'}</span>
+                        </div>
+                        <div class="institution">${edu.school || 'Institution'}</div>
+                    `;
+                    educationContainer.appendChild(eduItem);
+                });
+            }
+            
+            // Skills
+            const skillsContainer = document.getElementById('skills-content').querySelector('.skills-container');
+            if (data.skills && data.skills.length > 0) {
+                skillsContainer.innerHTML = '';
+                data.skills.forEach(skill => {
+                    const skillTag = document.createElement('span');
+                    skillTag.className = 'skill-tag';
+                    skillTag.textContent = skill;
+                    skillsContainer.appendChild(skillTag);
+                });
+            }
+        }
+    </script>
+</body>
+</html>
